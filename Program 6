@@ -1,0 +1,20 @@
+Program 6
+6. Program to add two numbers, using structures.
+
+
+#include <stdio.h>
+#include <stdlib.h>
+struct add
+{
+int a,b,sum;
+};
+typedef struct add r;
+int main()
+{
+r*s;
+s=(int*)malloc(sizeof(r));printf("Enter the values\n");
+scanf("%d %d",&(s->a),&(s->b));
+s->sum = s->a + s->b ;
+printf("sum is %d",(s->sum));
+return 0;
+}
