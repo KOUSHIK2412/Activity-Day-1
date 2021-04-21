@@ -1,11 +1,11 @@
+Program 1
 1. Addition of two numbers without functions.
-
 #include <stdio.h>
 int main()
 {
-int num1, num2;
-printf("Enter two numbers \n");
-scanf("%d%d", &num1, &num2);
-printf("The sum is %d \t", num1+num2);
+int a,b,sum;
+scanf("%d %d",&a,&b);
+sum=a+b;
+printf("%d",sum);
 return 0;
 }
