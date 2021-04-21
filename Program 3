@@ -1,0 +1,23 @@
+Program 3
+3. To add two numbers using functions and function prototypes.
+
+#include <stdio.h>
+void accept(int*,int*);
+void add(int ,int,int*);
+int main()
+{
+int a,b,sum;
+accept(&a,&b);
+add(a,b,&sum);
+printf("sum is %d",sum);
+return 0;
+}
+void accept(int*a,int*b)
+{
+printf("Enter the values\n");
+scanf("%d %d",a,b);
+}
+void add(int a,int b,int*s)
+{
+(*s)=a+b;
+}
