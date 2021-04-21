@@ -1,0 +1,20 @@
+Program 2
+2. Addition of two numbers using functions
+
+#include <stdio.h>
+void accept(int*a,int*b)
+{
+printf("Enter the values\n");
+scanf("%d %d",a,b);
+}
+void add(int a,int b,int*s)
+{
+(*s)=a+b;
+}
+int main()
+{
+int a,b,sum;
+accept(&a,&b);
+add(a,b,&sum);
+printf("sum is %d",sum);return 0;
+}
