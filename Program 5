@@ -1,0 +1,26 @@
+Program 5
+5. Program to add two numbers, memory to store information must be acquired using
+DYNAMIC MEMORY ALLOCATION techniques using functions .
+
+
+#include <stdio.h>
+#include <stdlib.h>
+void accept(int*a,int*b)
+{
+printf("Enter the values\n");
+scanf("%d %d",a,b);
+}
+void add(int a, int b,int*sum)
+{
+*sum = a+b;
+}
+int main()
+{
+int*a,*b,*sum;
+a=(int*)malloc(sizeof(int));
+b=(int*)malloc(sizeof(int));
+sum=(int*)malloc(sizeof(int));
+accept(a,b);
+add(*a,*b,sum);
+printf("sum is %d",*sum);
+}
